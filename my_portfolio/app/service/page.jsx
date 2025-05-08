@@ -1,7 +1,11 @@
-import React from 'react'
-
+"use client"
+import { motion } from "framer-motion";
 const service = () => {
-  return <div>service</div>
+  return (
+    <motion.section initial={{opacity: 0}} animate={{opacity: 1, transition: {delay:2.4, duration: 0.4, ease: "easeIn"}}}>
+      contact
+      </motion.section>
+    );
 }
 
 export default service
